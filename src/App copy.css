@@ -3,19 +3,12 @@
 .App {
   font-family: "roboto", sans-serif;
   text-align: center;
-  /*  */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
 } 
 
 .background {
   display: inline-block;
   position: fixed;
-  height: 100%; 
+  height: 100%;
   width: 100%;
   z-index: -1;
   background-color: #24A2FD !important;
@@ -26,8 +19,7 @@
 .logo {
   height: 120px;
   width: 120px;
-  /*  */
-  /* margin-top: 35vh; */
+  margin-top: 35vh;
 }
 
 .coming {
@@ -44,8 +36,6 @@
   font-weight: 500;
   margin-top: 2vh;
   padding: 0.2rem 2.5rem;
-  /*  */
-  cursor: pointer;
 }
 
 .early-access:hover {
@@ -59,21 +49,6 @@
   margin-top: 2vh;
 }
 
-.copyright {
-  color: white;
-  font-size: 0.8rem;
-  position: absolute;
-  bottom: 3vh;
-}
-
-.copyright-login {
-  color: white;
-  font-size: 0.8rem;
-  position: absolute;
-  bottom: 3vh;
-  align-self: center;
-}
-
 /***************************** Input *****************************/
 
 .white-container {
@@ -82,8 +57,7 @@
   background-color: white;
   border-radius: 50px;
   font-weight: 500;
-  /*  */
-  /* margin-top: 12vh; */
+  margin-top: 12vh;
   padding: 3rem 5rem;
   box-shadow: 0 5px 10px rgba(66, 63, 63, 0.2);
 }
@@ -148,8 +122,7 @@
 
 .ethAccount {
   color: white;
-  /*  */
-  margin-top: 4rem;
+  margin-top: 18rem;
 }
 
 .next {
@@ -161,18 +134,15 @@
 .connect-wallet {
   color: white;
   font-size: 2.5rem;
-  /*  */
-  margin-bottom: 4rem;
-  /* position: relative;
-  top: 25vh; */
+  position: relative;
+  top: 25vh;
 }
 
 .metamask-img {
   height: 2.5rem;
   width: 2.5rem;
   position: relative;
-  /*  */
-  /* top: 33vh; */
+  top: 33vh;
   left: 3rem;
   z-index: 1;
 }
@@ -183,10 +153,8 @@
   border-radius: 100px;
   padding: 1rem 8rem;
   position: relative;
+  top: 33vh;
   right: 0.8rem;
-  /*  */
-  /* top: 33vh; */
-  cursor: pointer;
 }
 
 /***************************** Create Account *****************************/
@@ -317,23 +285,15 @@ input:focus {
   padding: 5px 20px;
 }
 
-.sign-in, .sign-up {
-  font-weight: normal;
-  font-size: 0.8rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-}
-
 /***************************** Login *****************************/
 
 .wcLogin {
-  /*  */
-  /* margin-top: 20vh !important; */
+  margin-top: 20vh !important;
 }
 
 .login-btn {
   position: relative;
-  left: 0rem;
+  left: 0.9rem;
 }
 
 /***************************** Buy Now *****************************/
@@ -341,13 +301,8 @@ input:focus {
 .buy-now-wrap {
   display: flex !important;
   flex-direction: column;
-  /*  */
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-family: "roboto", sans-serif;
-  text-align: center;
-  /*  */
-  min-height: 100vh;
 }
 
 .wallet-address {
@@ -387,98 +342,87 @@ input:focus {
 
 .white-container2 {
   color: gray;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: inline-block;
   background-color: white;
   border-radius: 50px;
   box-shadow: 0 5px 10px rgba(66, 63, 63, 0.2);
   font-weight: 500;
-  /*  */
-  /* margin-top: 13vh; */
-  padding: 3rem 5rem 2.5rem;
+  margin-top: 13vh;
+  padding: 3rem 5rem 0;
   position: relative;
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  position: relative;
-}
-
-.right-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-left: 9rem;
 }
 
 .info {
+  display: flex;
   height: 25px;
   width: 25px;
+  justify-content: center;
+  vertical-align: middle;
   border-radius: 100%;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.1) !important;
   color: rgba(0, 0, 0, 0.2);
   font-weight: bold;
   font-size: 0.9rem;
-  position: absolute;
-  top: 30px;
-  left: 50px;
+  position: relative;
+  bottom: 30px;
+  right: 50px;
 }
 
 .tooltip1{
   height: 3rem;
-  width: 18rem !important;
+  width: 20rem !important;
   display: none;
   color: black;
   background-color: rgba(0, 0, 0, 0.2);
+  float: right;
   font-size: 0.6rem;
+  margin-top: 0;
   position: absolute;
-  top: 1.5rem;
-  left: 5rem;
+  left: 1.7rem;
   padding: 0.5rem 0.5rem;
   border-radius: 10px;
 }
 
 .song-poster {
-  background-color: #dbc7fe;
+  display: inline-block;
   height: 15rem;
   width: 15rem;
   border-radius: 25px;
+  position: relative;
+  bottom: 10.5rem;
+  margin-bottom: 1rem;
 }
 
 .song-info {
+  display: inline-block;
   text-align: left;
+  margin-left: -15rem;
+  position: relative;
+  top: 2.2rem;
 }
 
 .song-info h1 {
   letter-spacing: -0.7px;
   font-size: 1.9rem;
-  margin-top: 1rem;
 }
 
-.artist-info {
-  display: flex;
-  align-items: center;
-}
-
-.artist-info h5 {
+.song-info h5 {
   position: relative;
-  top: 0.3rem;
+  bottom: 0.5em;
 }
 
 .artist-img {
-  background-color: #76caff;
   display: inline-block;
   height: 35px;
   width: 35px;
   border-radius: 100%;
   box-shadow: 1px 1px 5px rgba(66, 63, 63, 0.4);
-  margin-right: 12px;
+  position: relative;
+  top: -2px;
+  right: 27px;
+  margin-right: -18px;
+  margin-left: 1.7rem;
 }
 
 .white-container-inner {
@@ -488,8 +432,8 @@ input:focus {
   border-radius: 25px;
   box-shadow: 0 5px 10px rgba(66, 63, 63, 0.35);
   font-weight: 500;
-  margin-bottom: 2rem;
   margin-left: 9rem;
+  margin-bottom: 2rem;
   padding: 2rem 1rem 1rem;
   text-align: center;
 }
@@ -545,23 +489,9 @@ hr {
   border-style: none;
   font-size: 0.8rem;
   padding: 7px 25px;
+  position: relative;
+  bottom: 1rem;
   cursor: pointer;
-  margin-bottom: 1.3rem;
-}
-
-.btn-sep {
-  margin-bottom: 0;
-}
-
-.your-tokns-btn {
-  color: #27BFFF;
-  font-size: 0.8rem;
-  margin-top: 0;
-}
-
-.your-tokns-btn:hover {
-  color: #27BFFF;
-  text-decoration: underline;
 }
 
 .buy-now-btn:hover {
@@ -576,61 +506,42 @@ hr {
   opacity: 40%;
 }
 
-@media (max-height: 650px) {
-  .white-container2 {
-    margin-top: 4.5rem;
-  }
-}
-
-@media (max-width: 950px) {
+@media (max-width: 850px) {
 
   .white-container2{
-    align-items: center;
-    flex-direction: column;
-    padding-top: 3.7rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    padding-bottom: 3.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 26rem;
     margin-bottom: 6rem;
-    /*  */
-    margin-top: 13vh;
-  }
-
-  .tooltip1 {
-    top: 0.5rem;
   }
 
   .white-container-inner {
-    margin: 2rem auto 0;
+    margin-left: 0;
+    position: relative;
+    top: 24rem;
+    right: 5rem;
   }
 
   .info {
-    left: 30px;
+    position: relative;
+    left: 0.5rem;
   }
 
-  .tooltip1 {
-    left: 4rem;
-  }
-
-  @media (max-height: 630px) {
-    .white-container2 {
-      margin-top: 4.5rem;
-    }
+  .song-img, .song-info {
+    position: relative;
+    left: 6.5rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .white-container2{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .info {
-    left: 30px;
-  }
-
-  .tooltip1 {
-    left: 4rem;
+    position: relative;
+    left: 2rem;
   }
 }
 
@@ -679,7 +590,8 @@ hr {
 /***************************** Congrats *****************************/
 
 .wci2 {
- 
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .congrats {
